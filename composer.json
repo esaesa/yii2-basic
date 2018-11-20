@@ -1,0 +1,57 @@
+{
+  "name": "esaesa/yii2-basic",
+  "description": "A skeleton for basic Yii2 web application with some basic user actions",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Islam Sameh",
+      "email": "eslamsameh@hotmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7",
+    "yiisoft/yii2": "^2",
+    "yiisoft/yii2-bootstrap": "*",
+    "yiisoft/yii2-jui": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "@dev",
+    "yiisoft/yii2-gii": "@dev"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "vendor-dir": "vendor",
+    "fxp-asset": {
+      "enabled": false
+    },
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "post-install-cmd": [
+    ],
+    "post-create-project-cmd": [
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+        }
+      ]
+    },
+    "yii\\composer\\Installer::postInstall": {
+      "generateCookieValidationKey": [
+        "config/web.php"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
