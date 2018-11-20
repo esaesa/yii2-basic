@@ -13,8 +13,9 @@
   "require": {
     "php": ">=7",
     "yiisoft/yii2": "^2",
-    "yiisoft/yii2-bootstrap": "*",
-    "yiisoft/yii2-jui": "*"
+    "yiisoft/yii2-bootstrap4": "~1.0.0",
+    "yiisoft/yii2-jui": "*",
+    "bower-asset/holderjs": "^2.9"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "@dev",
