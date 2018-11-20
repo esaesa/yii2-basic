@@ -19,7 +19,10 @@ class AppAsset extends AssetBundle
     public $depends = [
         // 'yii\web\YiiAsset',
         // 'yii\bootstrap\BootstrapAsset',
+        'yii\web\YiiAsset',
+        //'app\assets\PopperJsAsset', //Before bootstrap. No need if bootstrap bundle is used.
         'yii\bootstrap4\BootstrapPluginAsset',
-        'app\assets\HolderJsAsset'
+        'app\assets\HolderJsAsset',//Used to generate inline thumbnails.
+
     ];
 }
